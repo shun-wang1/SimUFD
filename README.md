@@ -12,12 +12,11 @@ This repository contains the implementation code for the paper ["An unsupervised
 ├── src/
 │   ├── utils.py                # Utility functions and dataset classes
 │   ├── models.py               # Model selection utilities 
-│   ├── dataset_configs.py      # Dataset configuration and data loader
-│   └── ...                     # Other source files
+│   └── dataset_configs.py      # Dataset configuration and data loader
 ├── dataset/                    # Raw data files
 │   ├── IMS/
 │   └── XJ/
-├── trained_models_IMS_2_1/     # Saved model checkpoints
+├── trained_models_XJ_2_2/      # Saved model checkpoints
 └── README.md                   # Project documentation
 ```
 
@@ -26,7 +25,7 @@ This repository contains the implementation code for the paper ["An unsupervised
    The data should be stored in MATLAB `.mat` files, where each file contains a matrix (e.g., `IMS_2_1`) with shape `[num_samples, num_features]`.  Here, `num_features` refers to the number of channels in the data. 
 2. Run the main script for training/testing:
    ```bash
-   python Main.py -data_type IMS_2_1 -model SimUFD 
+   python Main.py -data_type XJ_2_2 -model SimUFD 
    ```
 
 ## Arguments

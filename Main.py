@@ -78,7 +78,7 @@ def main():
     data_group.add_argument('-channels', type=str, nargs='+', help="Channels to use, e.g.: --channels CH1 CH3")
     data_group.add_argument('-data_type', type=str,
                             choices=['IMS_2_1', 'XJ_2_2', 'XJ_2_3', 'XJ_2_5'],
-                            default='XJ_2_5',
+                            default='XJ_2_2',
                             help='Fault type')
 
     args = parser.parse_args()
